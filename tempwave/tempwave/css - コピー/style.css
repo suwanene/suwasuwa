@@ -1,0 +1,470 @@
+@charset "UTF-8";
+/* CSS Document */
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Noto Sans CJK JP"),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format('woff2'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format('woff'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format('opentype');
+ }
+ @font-face {
+    font-family: 'Noto Sans JP Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: local("Noto Sans CJK JP"),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Semibold.woff2) format('woff2'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Semibold.woff) format('woff'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Semibold.otf) format('opentype');
+ }
+ @font-face {
+    font-family: 'Noto Sans JP DemiLight';
+    font-style: normal;
+    font-weight: 300;
+    src: local("Noto Sans CJK JP"),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-DemiLight.woff2) format('woff2'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-DemiLight.woff) format('woff'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-DemiLight.otf) format('opentype');
+ }
+html{
+	font-size: 62.5%;/*16px × 62.5% = 10px */
+}
+
+body{
+	font-family: 'Open Sans','Noto Sans JP',sans-serif;
+	font-feature-settings: "palt";
+	font-size: 1.5rem;
+	letter-spacing: 0.05em;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+	
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.pc-img{
+	display: none;
+}
+
+.br-pc{
+	display: none;
+}
+
+.text-center{
+	text-align: center;
+}
+.inner{
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+/*--------------------
+ header
+--------------------*/
+.header{
+	padding: 72px 0 64px;
+	background-image:url(../images/header/bg.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+
+.site-title{
+	margin-bottom: 32px;
+	font-size: 6rem;
+	font-weight:300;
+}
+
+.site-leading{
+	margin-bottom: 30px;
+	font-family: 'Noto Sans JP DemiLight',sans-serif;
+	font-size: 1.6rem;
+	line-height: 1.75;
+}
+.app-list{
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	justify-content: center;
+}
+.app-item{
+	width: 122px;
+	padding: 0 12px;	
+}
+.app-item.android {
+	width: 104px;
+}
+
+.header .app-list{
+	margin-bottom: 36px;
+}
+
+.header-eyecatch{
+	width:58.67%;
+	margin: 0 auto;
+}
+/*--------------------
+ footer
+--------------------*/
+.footer{
+	padding: 64px 0 56px;
+	border-bottom: solid 50px #7f7f7f;
+	background-image:url(../images/footer/bg-gra-top.png),url(../images/footer/bg-gra-bottom.png);
+	background-position: center top,center bottom;
+	background-repeat:repeat-x;
+	background-size:auto 24px;
+}
+.footer-lead{
+	margin-bottom: 24px;
+	font-size: 1.8rem;
+}
+.footer-icon{
+	width: 72px;
+	margin: 0 auto 32px;
+}
+.footer-text{
+	margin-bottom: 16px;
+	font-family: 'Open Sans Condensed';
+	font-size: 3.2rem;
+	font-weight: 300;
+}
+.footer-text-download{
+	display: block;
+	margin-bottom: 24px;
+	padding-top: 16px;
+	font-size: 2.2rem;
+}
+/*--------------------
+section
+--------------------*/
+.section-box:not(:last-child){
+	margin-bottom: 72px;
+}
+
+.section-title{
+	margin-bottom: 40px;
+	font-family: "Open Sans Condensed",sans-serif;
+	font-size: 5rem;
+	font-weight: 300;
+}
+
+.section-subhead{
+	margin-bottom: 40px;
+	font-size: 3.5rem;
+	font-family: "Open Sans Condensed",sans-serif;
+	font-weight: 300;	
+}
+
+.section-paragraph{
+	margin-bottom: 32px;
+	font-family: 'Noto Sans JP DemiLight',sans-serif;
+	line-height: 1.6;
+}
+/*--------------------
+What's temp wave
+--------------------*/
+.about{
+	padding: 72px 20px;
+}
+.about-item{
+	margin-bottom: 12px;
+	font-size: 2rem;
+}
+.about-item:last-of-type{
+	margin-bottom: 40px;
+}
+/*--------------------
+feature
+--------------------*/
+.feature{
+	background:url(../images/section/bg-feature.png) no-repeat center; 
+	background-size:375px auto;
+	color: #fff;
+}
+.feature .inner{
+	padding: 0 50px;
+}
+
+.overlay{
+	padding: 72px 0 80px;
+	background: rgba(0,0,0,0.5);
+}
+
+.feature-item:not(:last-of-type){
+	margin-bottom: 56px;
+}
+.feature-item .fa{
+	margin-bottom: 20px;
+	font-size: 4.5rem;
+}
+
+.feature-title{
+	margin-bottom: 16px;
+	font-family:'Noto Sans JP Medium',sans-serif;
+	font-size: 1.8rem;
+}
+.feature-text{
+	font-family: 'Noto Sans JP DemiLight',sans-serif;
+	line-height: 1.6;
+}
+/*--------------------
+setting
+--------------------*/
+.setting{
+	padding: 72px 20px 56px;
+}
+
+.setting-list{
+	display: -webkit-flex;
+	display: flex;
+	margin: 0 0 40px -24px;
+}
+.setting-item{
+	box-sizing: border-box;
+	width: 33.333%;
+	padding-left: 24px;
+	font-size: 1.2rem;
+}
+
+.setting-text{
+	display: inline-block;
+	margin-bottom: 12px;
+}
+
+/*PC Layout*/
+@media screen and (min-width:641px){
+	/*--------------------
+	common
+	--------------------*/
+	.sp-img{
+		display: none;
+	}
+	.pc-img{
+		display: block;
+	}
+	.br-sp{
+		display: none;
+	}
+	.br-pc{
+		display: block;
+	}
+	
+	.inner{
+		width: 1140px;
+		margin: 0 auto;
+		padding: 0;
+	}
+	
+	
+	/*--------------------
+	header
+	--------------------*/
+	.header{
+		padding: 112px 0 120px;
+		background-image: url(../images/header/bg-pc.png);
+		background-position: center;
+		background-size: cover;
+	}
+	
+	.header .inner{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-flex-direction:row-reverse;
+		flex-direction:row-reverse;
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+		-webkit-align-items: center;
+		align-items: center;
+		padding: 0 98px;
+	}
+	.header-info{
+		text-align:left;
+	}
+	.site-title{
+		margin-bottom: 48px;
+		font-size: 7rem;
+	}
+	.site-leading{
+		margin-bottom: 40px;
+		font-size: 2.6rem;	
+	}
+	.header .app-list{
+		-webkit-justify-content: flex-start;
+		justify-content: flex-start;
+		margin-left: -12px;
+	}
+	.app-item{
+		width: 136px;
+	}
+	.app-item.android{
+		width: 115px;
+	}
+	
+	.header-eyecatch{
+		width: 292px;
+		margin: 0;
+	}
+	/*--------------------
+	footer
+	--------------------*/
+	.footer{
+		padding: 128px 0 106px;
+		border-bottom-width: 80px;
+		background-size: auto 48px;
+	}
+	.footer-lead{
+		margin-bottom: 32px;
+		font-size: 3.2rem;
+	}
+	.footer-icon{
+		width: 100px;
+	}
+	.footer-text{
+		font-size: 5rem;
+		line-height: .75;
+		
+	}
+	.footer-text-download{
+		margin-bottom: 32px;
+		padding-top: 24px;
+		font-size: 4rem;
+	}
+	
+	/*--------------------
+	section
+	--------------------*/
+	main{
+		overflow: hidden;
+	}
+	
+	.section-box:not(.section-box__column){
+		display: -webkit-flex;
+		display: flex;
+		margin-bottom: 0;
+		padding: 0 98px;
+	}
+	.section-box__reverse{
+		flex-direction: row-reverse;
+	}
+	.section-box.section-box__onethird{
+		position: relative;
+		margin-left: -30px;
+		padding: 0 0 292px;
+	}
+	
+	.section-item__onethird{
+		width: 360px;
+		padding-left: 30px;
+	}
+	
+	.section-item__onethird:last-of-type{
+		position: absolute;
+		top:-140px;
+		right:-128px;
+		width: 490px;
+	}
+
+	.section-box.section-box__column{
+		margin-bottom: 96px;
+	}
+	
+	.section-item__text{
+		width: 456px;
+	}
+	
+	.section-box .section-item__text{
+		padding-top: 160px;
+		padding-right: 98px;
+	}
+	
+	.section-box__reverse .section-item__text{
+		padding: 160px 0 0 98px;
+	}
+	
+	.section-item__img{
+		width: 425px;
+	}
+	.section-title{
+		font-size: 6rem;
+	}
+	.section-subhead{
+		margin-bottom: 32px;
+		font-size: 4.2rem;
+	}
+	/*--------------------
+	about
+	--------------------*/
+	.about{
+		width: 1140px;
+		margin: 0 auto;
+		padding: 112px 0 0;
+	}
+	.about .section-title{
+		margin-bottom: 88px;
+	}
+	
+	/*--------------------
+	feature
+	--------------------*/
+	.feature{
+		background-size: 480px auto;
+	}
+	.overlay{
+		padding: 140px 0 144px;
+	}
+	
+	.feature-list{
+		display: -webkit-flex;
+		display: flex;
+		-webkit-justify-content: center;
+		justify-content: center;
+		
+	}
+	.feature-item{
+		width: 33.333%;
+		padding: 0 40px;
+	}
+	.feature-item:not(:last-of-type){
+		margin-bottom: 0;
+	}
+	.feature-item .fa{
+		margin-bottom: 40px;
+	}
+	
+	/*--------------------
+	setting
+	--------------------*/
+	.setting.inner{
+		padding-top: 112px;
+		padding-bottom: 96px;
+	}
+	.setting .pc-img{
+		padding-top: 32px;
+	}
+	
+	.setting-list{
+		-webkit-justify-content: space-between;
+		justify-content: space-between;
+	}
+	
+	.setting-item{
+		width: 98px;
+		box-sizing: content-box;
+	}
+	.setting-item img{
+		width: 66px;
+	}
+	.setting-text{
+		margin-bottom: 16px;
+	}
+	
+	
+	
+	
+}
+
+
+
+

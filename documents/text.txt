@@ -1,0 +1,275 @@
+■HOME
+
+
+---ナビゲーション（CSSで大文字表記に）
+Home
+About
+Works
+Contact
+
+
+---Works
+これまでの制作事例を紹介
+
+
+Graphic
+Signage / VR
+UI / UX
+
+
+View More
+
+
+
+
+---News
+最新のイベントや更新情報
+
+
+2017.10.19
+Seminar
+VRセミナー “Make :: VR” を11月10日（金）に開催します。
+
+
+2017.09.15
+Media
+DH MEDIAに弊社デザイナーが “サービスデザインUX”を寄稿いたしました。
+
+
+2017.09.01
+Recruit
+フロントエンドエンジニア、サーバーサイドエンジニア、アプリエンジニアを募集しています。
+
+
+--footer
+2F 21-23-1 Shibuya,Shibuya-ku,
+Tokyo, Japan, 150-0002
+
+
+150-0002
+東京都渋谷区渋谷1丁目23-21
+渋谷キャスト2F
+
+
+©️copyright RCU DESIGN Inc. All Rights Reserved.
+（©️はコーディング時は実態参照へ変換でお願いします）
+
+
+
+
+■ABOUT
+
+
+私たちは、クライアントの課題・希望に対し”責任”を持って成果を出すため
+最適なデザイン・コンテンツを”創造”します。
+
+
+Responsibility
+責任
+
+
+Creation
+創造
+
+
+User Experience
+ユーザー体験
+
+
+
+
+--Company
+社名
+株式会社RCUデザイン
+
+
+設立
+2017年5月
+
+
+住所
+〒150-0002
+東京都渋谷区渋谷1-23-21
+渋谷キャスト2F
+
+
+電話番号
+0120-123-4567
+
+
+メールアドレス
+info@rcudesign.com
+
+
+事業内容
+ウェブデザイン、インタラクティブデザイン、グラフィックデザイン
+
+
+--Access
+〒150-0002
+東京都渋谷区渋谷1-23-21
+渋谷キャスト2F
+0120-123-4567
+
+
+Google Maps
+
+
+
+
+
+
+■Works
+実績一覧
+All
+Graphics
+Signage / VR
+UI/UX Design
+
+
+8Hours
+Graphic Design
+
+
+Temp Wave
+UI/UX Design
+
+
+
+
+Green Room
+UI/UX Design
+
+
+Dots
+Signage / VR
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+■Contact
+お問い合わせ
+
+
+仕事のご依頼・ご相談はこちらから
+
+
+お名前
+会社名
+メールアドレス
+お問い合わせ内容
+必須
+
+
+プライバシーポリシーに同意する
+
+
+確認
+
+
+
+
+
+
+—————URL—————————
+■font-awesome
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+■SVGタグ（モバイルボタンで使用）
+<svg viewBox="0 0 44 44" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" aria-labelledby="menuButtonTitle">
+ <title id="menuButtonTitle">Menu</title>
+ <symbol id="bar">
+ 　　<rect width="28" height="1" fill="#a0a0a0"></rect>
+ </symbol>
+ <use xlink:href="#bar" x="8" y="14"></use>
+ <use xlink:href="#bar" x="8" y="24"></use>
+ <use xlink:href="#bar" x="8" y="34"></use>
+</svg>
+
+
+
+■head
+
+
+
+
+—————CSS—————
+/*--------------------
+base
+---------------------*/
+@font-face {
+    font-family: 'Noto Sans JP';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Noto Sans CJK JP"),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff2) format('woff2'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.woff) format('woff'),
+         url(//fonts.gstatic.com/ea/notosansjp/v5/NotoSansJP-Regular.otf) format('opentype');
+ }
+
+■Montserrat
+https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i
+
+
+■
+.btn-trigger.active use:nth-of-type(1) {
+    -webkit-transform: translateY(30px) rotate(-45deg);
+    transform: translateY(30px) rotate(-45deg);
+}
+.btn-trigger.active use:nth-of-type(2) {
+    opacity: 0;
+}
+.btn-trigger.active use:nth-of-type(3) {
+    -webkit-transform: translateX(35px) translateY(-15px) rotate(45deg);
+    transform: translateX(35px) translateY(-15px) rotate(45deg);
+}
